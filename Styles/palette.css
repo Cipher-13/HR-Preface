@@ -788,3 +788,128 @@ margin-top: 200px;
     }
 }
 .why-us-img img{width: 490%;}
+/********************************/
+.hr-zone-container {
+  /* Global-like variables scoped to component */
+  --purple-bg: #d9def7;
+  --green-bg: #d4f0e2;
+  --yellow-bg: #f9f3c1;
+  --blue-bg: #c5e3f6;
+  --text-main: #000;
+  --text-muted: #7a7a7a;
+
+  font-family: 'Cairo', sans-serif;
+  background: #fff;
+  color: var(--text-main);
+
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  overflow-x: hidden;
+}
+
+/* Header */
+.hr-zone-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+/* Layout */
+.hr-cards-wrapper {
+  position: relative;
+}
+
+.hr-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.hr-card {
+  border-radius: 35px;
+  padding: 40px 30px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.hr-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-tag {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.hr-card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: auto;
+}
+
+.card-icon {
+  margin-top: 30px;
+  font-size: 64px;
+  text-align: center;
+}
+
+/* Card colors */
+.card-purple { background: var(--purple-bg); }
+.card-green  { background: var(--green-bg); }
+.card-yellow { background: var(--yellow-bg); }
+.card-blue   { background: var(--blue-bg); }
+
+/* Decorative elements */
+.decor-block {
+  position: absolute;
+  z-index: -1;
+}
+
+.decor-top-left { top: -40px; left: -40px; }
+.decor-mid-right { top: 35%; right: -50px; }
+.decor-bottom-left { bottom: -40px; left: -40px; }
+.decor-bottom-right { bottom: -40px; right: -40px; }
+
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 18px);
+  gap: 4px;
+}
+
+.pixel-grid span {
+  width: 18px;
+  height: 18px;
+}
+
+.decor-top-left span { background: #7a86cb; }
+.decor-mid-right span { background: #81c784; }
+.decor-bottom-left span { background: #ffeb3b; }
+.decor-bottom-right span { background: #2196f3; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hr-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hr-zone-header {
+    font-size: 1.5rem;
+  }
+
+  .hr-card {
+    min-height: 350px;
+    padding: 25px;
+  }
+
+  .decor-block {
+    display: none;
+  }
+}
