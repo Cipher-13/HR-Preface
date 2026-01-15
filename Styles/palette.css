@@ -1,0 +1,110 @@
+.main-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.main-header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.main-header .logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Navigation */
+.main-header .nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.main-header .nav-links a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #025B50;
+  position: relative;
+}
+
+.main-header .nav-links a.active {
+  color: #128B7C;
+}
+
+.main-header .nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #128B7C;
+}
+
+.main-header .nav-links a:hover {
+  color: #128B7C;
+}
+
+/* Actions */
+.main-header .actions {
+  display: flex;
+  gap: 12px;
+}
+
+.main-header .actions .btn {
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.main-header .actions .login {
+  background: #e6f4f1;
+  color: #025B50;
+}
+
+.main-header .actions .login:hover {
+  background: #d1ebe6;
+}
+
+.main-header .actions .meeting {
+  background: #128B7C;
+  color: #ffffff;
+}
+
+.main-header .actions .meeting:hover {
+  background: #025B50;
+}
+
+/*******/
+.Home {
+  background-image: url(../assets/images/bodu.png);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.headers{
+  color: #ffffff;
+}
+
+article {
+  font-size: 45px;
+}
+
+.banner-txt {
+  font-size: 20px;
+}
+
+ 
+.banner {
+  margin-top: -200px;
+}
