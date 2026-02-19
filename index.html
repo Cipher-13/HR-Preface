@@ -18,21 +18,10 @@
 
 <body>
 
-    <header class="main-header" dir="rtl">
+    <header class="main-header">
         <div class="container">
 
-            <!-- Logo -->
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="TM Logo" />
-            </div>
 
-            <!-- Navigation -->
-            <nav class="nav-links">
-                <a href="#" class="active">الرئيسية</a>
-                <a href="#">عن اتش ارزون</a>
-                <a href="#">محتوى</a>
-                <a href="#">حلول اتش ارزون</a>
-            </nav>
 
             <!-- Actions -->
             <div class="actions">
@@ -40,8 +29,24 @@
                 <button class="btn meeting">احجز اجتماع</button>
             </div>
 
+
+            <!-- Navigation (Semantic Nav) -->
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#">حلول اتش ارزون</a>
+                <a href="#">محتوى</a>
+                <a href="#">عن اتش ارزون</a>
+              
+                <a href="#" class="active">الرئيسية</a>
+            </nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="TM Logo" />
+            </div>
+
         </div>
     </header>
+
 
 
     <section class="Home">
@@ -49,11 +54,16 @@
         <div class="container">
             <div class="row">
 
-                <div class="ribbon mt-3">
-                    <img src="assets/images/ribbon.png" alt="">
+
+                <div class="ribbon-wrapper mt-3">
+                    <p class="ribbon-text">
+                   اصبح متاحا الان في المملكة العربية السعودية ,ليقدم للمنشأت حلا متطورا لادارة الموارد البشرية بكل سهولة وفعالية HR Zone يسرنا أن نبلغكم بأن نظام اصبح متاحا  
+                        <i class="fa-solid fa-hands-clapping"></i>
+                    </p>
+                    
                 </div>
 
-                <div class="headers  text-center m-5">
+                <div class="headers text-white text-center m-5">
                     <article>
                         حيث تتكامل الموارد البشريةوتتطور بذكاء
                     </article>
@@ -63,7 +73,7 @@
                     <p>وتناسب وتيرة نمو منشأتك </p>
                 </div>
 
-                <div class="banner  ">
+                <div class="banner ">
                     <img src="assets/images/banner.png" alt="">
                 </div>
 
@@ -181,9 +191,9 @@
         <!-- Main Content -->
         <main class="dashboard-main">
             <div class="container-fluid">
-               
-                    <div class="why-us-img"><img src="assets/images/c2.png" alt=""></div>
-                </div>
+
+                <div class="why-us-img"><img src="assets/images/c2.png" alt=""></div>
+            </div>
         </main>
 
 
